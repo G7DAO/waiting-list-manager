@@ -1,10 +1,10 @@
 # G7 Product Specification
-This product spec meets the IEEE 830 System Requirements Specification. Non-functional requirements that meet the ISO/IEC/IEEE 29148:2011 specification will be added at a future date as needed.
+This product spec meets the functional requirements of the ISO/IEC/IEEE 29148:2018 Software Requirements Specification. Non-functional requirements that meet the ISO/IEC/IEEE 29148:2018 specification will be added at a future date as needed.
 # Software Requirements Specification
 ## For G7 Waiting List & NFT Presale Manager 
 Version 0.01 approved by BlocSecNerd for G7 Wait-list Prototype
 
-Prepared by BlocSecNerd - G7 Opensource Engineering Contributor on 04 / 25 / 2022
+Prepared by BlocSecNerd - G7 Opensource Engineering Contributor on 03 / 25 / 2022
 
 Table of Contents
 =================
@@ -48,7 +48,7 @@ Table of Contents
 ## Revision History
 | Name         | Date       | Reason For Changes | Version |
 |--------------|------------|--------------------|---------|
-| Hello World | 04/26/2022 |   Initial Commit   | v0.01 |
+| Hello World | 03/26/2022 |   Initial Commit   | v0.01 |
 |              |            |                    |         |
 |              |            |                    |         |
 
@@ -138,19 +138,28 @@ TODO
 
 Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on. Define any pertinent message formatting. Identify any communication standards that will be used, such as FTP or HTTP. Specify any communication security or encryption issues, data transfer rates, and synchronization mechanisms.
 ## System Features
-Each system feature will be listed in the order in which it is developed and released. Each system 
-### 4.1 System Feature 1
-Don’t really say “System Feature 1.” State the feature name in just a few words.
-4.1.1   Description and Priority
- Provide a short description of the feature and indicate whether it is of High, Medium, or Low priority. You could also include specific priority component ratings, such as benefit, penalty, cost, and risk (each rated on a relative scale from a low of 1 to a high of 9).
-4.1.2   Stimulus/Response Sequences
- List the sequences of user actions and system responses that stimulate the behavior defined for this feature. These will correspond to the dialog elements associated with use cases.
-4.1.3   Functional Requirements
- Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute the use case. Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available.
- 
- Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind.
+Each system feature will be listed in the order in which it's developed (priority) and released. Features can be added in the backlog in the order they are listed. 
+### 4.1 (v0.01) EVM Smart Contract Examples
+The goal of this iteration is produce several smart contract examples that can be run on an EVM compatible blockchain in a test environment such as remix.ethereum.org. The smart contracts will possess the following features:
+* Set Start Date/Time & End Date/Time
+* Set Gas Fee
+* Add ability to validate, collect and store whitelisted wallet addresses
+* Add ability to remove a wallet address from the list
+* NFT Mint Function for whitelisted addresses (optional)
 
-### 4.2 System Feature 2 (and so on)
+4.1.1   Description - TODO
+
+4.1.2   Functional Requirements- TODO
+
+4.1.3   User Stories - TODO
+
+4.1.4   Dependencies - TODO
+
+4.1.5   Influences and Attribution:
+* [HashLips Smart Contracts](https://github.com/HashLips/solidity_smart_contracts)
+
+### 4.2 (v0.02) EVM Blockchain Examples
+TODO
 
 ## Other Nonfunctional Requirements
 ### 5.1 Performance Requirements

@@ -1,59 +1,36 @@
-## G7 Waiting List & NFT Presale Manager
-An easily deployable wait-list for game developers that wish to create and manage player waiting lists or NFT pre-sale lists using web 3.0 technologies.
-### G7 Project Specification:
+## Game7 Wait-list & NFT Presale Manager
+An easily deployed system for creating and managing game wait-lists or NFT pre-sale lists using web 3.0 technologies. This system is intended for:
+* Game Developers who wish to create a system capable of collecting lists of reliable, motivated players that will play their game when it's first released and are open to playing future games as they are released. 
+* Marketing Professionals working in the gaming space who desire to build communities of motivated players on behalf of the game developers.
 
-[IEEE 830 System Requirements Specification](https://testdriven.io/blog/flask-and-celery/).
+### Attribution
+This idea was brought to Game7 (G7) by [Mr. X](asdasd) on 03/25/2022. Mr. X has contributed to the following regarding this project:
+* The Idea: origin
+* The Specification: user stories and functionality
 
-### Technologies:
- - Docker
- - Flask
- - Celery
- - Redis
- - Flower
- - Pandas
- - BeautifulSoup
+### Product Roadmap
+The Wait-list & NFT Presale Manager product roadmap follows the [G7 product development guidelines](https://github.com/G7DAO/g7-guidelines).
 
-### Dependencies:
-Required to run this program
- - Docker
- - Docker Compose
- - Scraperapi.com account (free)
+- [x] Idea - Completion date 03/25/2022
+- [ ] Specification - Completion due date 03/31/2022
+- [ ] MVP - Not scheduled
+- [ ] Production - Not scheduled
 
+### Idea
+Q: How do we provide game developers with a list of reliable and motivated players for upcoming game releases.
 
-### Building this project?
-_Add Scraperapi.com API KEY to docker-compose file_
-
-**Using the Makefile:** 
-
- - start (start for the first time)
- - rebuild (apply changes)
- - teardown (tear down project)
+A: Build a system that allows game developers to build / manage their own wait-lists. Build a system that can be used by marketing professionals to build lists on behalf of the gaming companies.
 
 
-**Commandline:**
- - $ docker-compose up -d --build
+### Project Specification
+Project Specification for the G7 Wait-list & NFT Presale Manager. The specification is open source and can be used by any developer under [The MIT License (MIT)](https://mit-license.org/) 
 
-### Running this project?
-**Browser:**
+[ISO/IEC/IEEE 29148:2018 Software Requirements Specification](https://github.com/G7DAO/g7-waiting-list-manager/blob/main/SRS.md).
 
- - Open browser to [http://localhost:5004](http://localhost:5004) to view the app
- - Open browser to [http://localhost:5556](http://localhost:5556) to view the Flower dashboard.
-
-
-**Commandline:**
-
-Trigger a new task:
- - $ curl http://localhost:5004/tasks -H "Content-Type: application/json" --data '{"topic": "gig"}'
-
-
-Check the status:
- - $ curl http://localhost:5004/tasks/<TASK_ID>/
-
-**Reports & Logs**
- - reports can be found under reports folder created once you run the app
- - logs can be found in the logs folder in the project directory 
 
 **TODO**
- - complete tests
- - add crawlers for GH search page
+ - add additional blockchain details
+ - add user stories to spec
+ - add diagrams to spec
+ - complete spec and submit for community vote
 
