@@ -1,5 +1,5 @@
 # G7 Product Specification
-This product spec meets the functional requirements of the ISO/IEC/IEEE 29148:2018 Software Requirements Specification. Non-functional requirements that meet the ISO/IEC/IEEE 29148:2018 specification will be added at a future date as needed. Monday Test Again
+This product spec meets the functional requirements of the ISO/IEC/IEEE 29148:2018 Software Requirements Specification. Non-functional requirements that meet the ISO/IEC/IEEE 29148:2018 specification will be added at a future date as needed. Monday Test Again and again
 # Software Requirements Specification
 ## For G7 Waiting List & NFT Presale Manager 
 Version 0.01 approved by BlocSecNerd for G7 Wait-list Prototype
