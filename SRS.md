@@ -74,7 +74,6 @@ This product has several important properties or areas of concern.
 * Rewards systems such as discord badges, early access to other projects, etc
 * 3rd party integration such as discord, twitter, etc
 ### 1.5 References
-TODO
 * [Semantic Versioning 2.0.0](https://semver.org/)
 ## Overall Description
 ### 2.1 Product Perspective
