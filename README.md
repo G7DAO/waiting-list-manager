@@ -12,7 +12,7 @@ This idea was brought to Game7 (G7) by [Mr. X](asdasd) on 03/25/2022. Mr. X has 
 The Wait-list & NFT Presale Manager product roadmap follows the [G7 product development guidelines](https://github.com/G7DAO/g7-guidelines).
 
 - [x] Idea - Completion date 03/25/2022
-- [ ] Specification - Completion due date 03/31/2022
+- [ ] Specification - Completion due date 04/10/2022
 - [ ] MVP - Not scheduled
 - [ ] Production - Not scheduled
 

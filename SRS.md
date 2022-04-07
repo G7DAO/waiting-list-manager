@@ -78,9 +78,9 @@ This product has several important properties or areas of concern.
 ## Overall Description
 ### 2.1 Product Perspective
 This product is a stand-alone, open sourced project that is designed to give game developers and marketing developers the tools needed to create and manage lists of players waiting to gain access to a specific game using web 3.0 technologies. Developers can pick and choose how much of the project they wish to implement. From the most basic installation that just uses smart contracts to an advanced installation that includes all the bells and whistles. The project uses a decentralized architecture to create and store lists.     
-### 2.2 Product Functions
+### 2.2 Product Functionality
 Summary of the primary functions performed by this product.
-* Smart Contracts. Choose from several smart contracts you wish to use as is or that you wish to build on.
+* Smart Contracts. Choose from several smart contracts you wish to use.
 * Blockchain. Choose which blockchain you wish to deploy your contract on.
 * List Builder Dapp. Can be deployed as is or customized. We provide code samples that allow you to integrate the list builder into your existing app.
 * List Manager Dapp. Can be deployed as is or customized. We provide code samples that allow you to integrate the list manager into your existing app.
@@ -102,7 +102,7 @@ The product, in its most minimalistic form, is designed operate from a Blockchai
 * Avalanche
 * Polygon
 * Fantom
-* Binance Smart Chain 
+* Ethereum 
 
 The advanced features of the product are designed to **support** the main Blockchain features. The optional Backend and Frontend UI elements are designed to interact with the smart contract / blockchain functionality. The BE / FE UI elements can be hosted in any cloud environment or run as Dapps. The optional incentive systems, reward systems and 3rd party integrations will require cloud hosting.    
 ### 2.5 Design and Implementation Constraints

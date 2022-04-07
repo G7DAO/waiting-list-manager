@@ -1,0 +1,28 @@
+.center {
+  text-align: center;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+ul.horizontal-list {
+  list-style: none;
+  background-color: #1c87c9;
+  color: white;
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+
+ul.horizontal-list li {
+  display: inline-block;
+  padding: 0 0.5rem;
+  min-width: 7rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+ul.horizontal-list li:not(:last-child) {
+  border-right: 1px solid white;
+}
