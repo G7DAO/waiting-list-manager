@@ -1,4 +1,4 @@
-## Game7 Wait-list & NFT Presale Manager
+## Wait-list & NFT Presale Manager
 An easily deployed system for creating and managing game wait-lists or NFT pre-sale lists using web 3.0 technologies. This system is intended for:
 * Game Developers who wish to create a system capable of collecting lists of reliable, motivated players that will play their game when it's first released and are open to playing future games as they are released. 
 * Marketing Professionals working in the gaming space who desire to build communities of motivated players on behalf of the game developers.
