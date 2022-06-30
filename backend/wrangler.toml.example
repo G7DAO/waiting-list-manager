@@ -1,12 +1,13 @@
-name = "g7-api"
+name = "my-worker"
 type = "webpack"
-account_id = ""
+account_id = "00000"
 workers_dev = true
 webpack_config = "webpack.config.js"
 compatibility_date = "2022-04-30"
+zone_id = "0000"
 
 [vars]
 CF_TEST_KEY = ""
 CF_TOKEN_SECRET = ""
 CF_FAUNADB_SECRET = ""
-CF_FAUNADB_ENDPOINT = ""
+CF_FAUNADB_ENDPOINT = "db.us.fauna.com"
