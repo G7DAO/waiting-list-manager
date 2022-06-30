@@ -1,0 +1,12 @@
+node_modules
+.idea
+coverage
+coverage.json
+typechain
+
+#Hardhat files
+cache
+artifacts
+
+# local env files
+.env.local
