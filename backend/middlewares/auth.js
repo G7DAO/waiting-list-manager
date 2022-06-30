@@ -1,5 +1,4 @@
 const jwt = require('jsonwebtoken');
-const crypto = require('crypto');
 
 exports.authMiddleware = (req, res, request) => {
   const key = request.headers.get('Key');

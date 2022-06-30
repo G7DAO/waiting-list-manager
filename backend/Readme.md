@@ -41,3 +41,38 @@ npm install
 ```
 npm run publish
 ```
+
+////////////////////////////
+
+# Cloudflare Worker Rest Api
+
+Serverless rest api designed for cloudflare workers
+
+### Inspiration & Attribution
+
+This rest api was inspired by the following [project](https://github.com/rajtatata/cloudflare-worker-rest-api)
+
+### Rest API
+
+The supported methods are POST, GET, DELETE and PUT.  HTTP methods are handled in the routers.
+
+### Routing
+
+The package also supports routers. Routes are divided into multiple files.
+
+```js
+const restWorker = require('../_rest')
+const {
+  getWaitListEntry,
+  getWaitListEntries,
+  createWaitListEntry,
+} = require('../controllers/waitlist')
+
+const router = new restWorker()
+
+router.get('/:entryId', getWaitListEntry)
+router.get('/', getWaitListEntries)
+router.post('/', createWaitListEntry)
+
+module.exports = router
+```

@@ -19,7 +19,7 @@ module.exports = class App {
         }
 
         let url = '/' + request.url.split('/').slice(3).join('/').split('?')[0]
-
+        // get route
         let route = this.routes.find(elem => this.routeCheck(elem.url, url) && elem.method === method)
         // if no route found, try to find with any method
         if (!route) route = this.routes.find(elem => this.routeCheck(elem.url, url) && elem.method === '*')
