@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Web3Token from 'web3-token';
-import {ethers} from "ethers";
+import { ethers } from "ethers";
 import Cookies from 'js-cookie';
 
 // API Imports

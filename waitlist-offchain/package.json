@@ -1,17 +1,14 @@
 {
-  "name": "client",
+  "name": "waitlist",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://api.game7.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "@web3-react/core": "^6.1.9",
     "@web3-react/injected-connector": "^6.0.7",
-    "axios": "^0.26.1",
     "ethers": "^5.6.5",
-    "faunadb": "^4.6.0",
     "js-cookie": "^3.0.1",
     "jsonwebtoken": "^8.5.1",
     "react": "^17.0.2",
