@@ -1,6 +1,6 @@
 # Serverless Rest Api using Cloudflare Workers 
 
-Sample serverless Rest Api using Cloudflare Workers, Fauna DB and JWT Authentication. 
+Sample serverless Rest Api using Cloudflare Workers, Fauna DB and Web3 / JWT Authentication. 
 This example is a fully distributed architecture that is highly scalable and highly available.
 
 This is a sample back-end that's provided for your convenience. It's optional.
@@ -17,7 +17,10 @@ The supported methods are POST, GET, DELETE and PUT.  HTTP methods are handled i
 Rest api is fully CORS compatible. It works well with Cloudflare Pages.
 
 ### Authentication
-All routes are fully secured with no public routes. Authentication uses JYT and is managed in the auth middleware.
+All routes are secured with no public routes. Authentication uses JYT, Web3Tokens and Web3 Signed Messages for authentication. It's managed in the auth middleware and in the auth controller. Here is the auth flow.
+
+![Auth Image](https://imagedelivery.net/ph5-WnG_BHVkS1XMMlyMeg/7bd24f20-98c1-4512-f255-6c7ebf115300/public "Auth Image")
+
 ### Project Structure
 
 The project is divided into models, controllers, middlewares and routers in order for it to look like something closer to real world applications.
