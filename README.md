@@ -16,11 +16,16 @@ An easily deployed system for creating and managing game waitlists or NFT pre-sa
 ### Project Structure
 
 Waitlist is a React project with the following dependencies
+  - Off-Chain Waitlist requires Rest API (see backend)
+  - On-Chain Waitlist requires EVM compatible blockchain (more chains coming)
   - Web3, Ethers, Jsonwebtoken
-  - Cloudflare Pages (optional)
+  - Cloudflare Account & Cloudflare Pages (optional)
 
-Backend (optional) is a Node.js
-  - ?? 
+Backend (optional) is a Node.js project
+  - Cloudflare Account
+  - Cloudflare Workers
+  - Cloudflare Wrangler
+  - FaunaDB
 
 ### Attribution
 
