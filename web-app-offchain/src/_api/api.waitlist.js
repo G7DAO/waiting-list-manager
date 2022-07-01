@@ -9,7 +9,7 @@ const createWaitList = () => {
   };
 
   const createWaitListEntry = async (waitlist, token) => {
-    const url = process.env.REACT_APP_API_LOCAL_URL+'/waitlist'
+    const url = process.env.REACT_APP_API_LOCAL_URL+'/v1/waitlist'
     return await fetch(url, {
       method: 'POST',
       headers: {
