@@ -1,5 +1,5 @@
 # G7 Product Specification
-This product spec meets the functional requirements of the ISO/IEC/IEEE 29148:2018 Software Requirements Specification. Non-functional requirements that meet the ISO/IEC/IEEE 29148:2018 specification will be added at a future date as needed. Monday Test Again and again
+This product spec meets the functional requirements of the ISO/IEC/IEEE 29148:2018 Software Requirements Specification. Non-functional requirements that meet the ISO/IEC/IEEE 29148:2018 specification will be added at a future date as needed.
 # Software Requirements Specification
 ## For G7 Waiting List & NFT Presale Manager 
 Version 0.01 approved by BlocSecNerd for G7 Wait-list Prototype
@@ -46,15 +46,15 @@ Table of Contents
 
 
 ## Revision History
-| Name         | Date       | Reason For Changes | Version |
-|--------------|------------|--------------------|---------|
-| Hello World | 03/26/2022 |   Initial Commit   | v0.01 |
-|              |            |                    |         |
-|              |            |                    |         |
+| Name        | Date       | Reason For Changes       | Version |
+|-------------|------------|--------------------------|---------|
+| Hello World | 03/26/2022 | Initial Commit           | v0.01 |
+| Backend     | 05/30/2022 | provide rest api example | v0.01 |
+| Wapp-offchain | 06/30/2022 | Initial Commit | v0.01 |
 
 ## 1. Introduction
 ### 1.1 Purpose 
-Build an easily deployable, open source product that enables game developers to create and manage player waiting lists or NFT pre-sale lists using web 3.0 technologies.
+Build and Open Source several examples of a Player Waitlist that is designed for Web3 Gaming. These Waitlist examples can be used as off-chain and on-chain player waiting lists or NFT pre-sale lists using web 3.0 technologies.
 ### 1.2 Document Conventions
 * Dependencies are displayed as _italic_
 * Priority items are displayed as **bold**
@@ -66,24 +66,30 @@ Build an easily deployable, open source product that enables game developers to 
 The intended audience for this specification is any game developer who wishes to create a web 3.0 waiting-list for their game. Other audiences that may benefit from this specification are NFT Creators, Crypto Marketing Developers, DeFi Developers or other Web 3.0 Developers wishing to create a waiting list for a project.  
 ### 1.4 Product Scope
 This product has several important properties or areas of concern.
-* Interface for building player lists for your game. Deployed as a Dapp or integrated into your existing app.
-* Interface for monitoring and interacting with player lists. Deployed as a Dapp or integrated into your existing app.
+* Interface for building player lists for your game. Deployed as a Wapp, a Dapp or integrated into your existing app.
+* Interface for monitoring and interacting with player lists. Deployed as a Wapp, a Dapp or integrated into your existing app.
 * Programmatic monitoring of lists and interacting with player lists via CLI & API.
 * Player incentive system that create incentives for players to join your lists. Including NFT giveaway or pre-sale.
 * Smart Contract and Blockchain deployment.
 * Rewards systems such as discord badges, early access to other projects, etc
 * 3rd party integration such as discord, twitter, etc
+* Serverless Deployment examples and Distributed Databases examples
 ### 1.5 References
 * [Semantic Versioning 2.0.0](https://semver.org/)
 ## Overall Description
 ### 2.1 Product Perspective
-This product is a stand-alone, open sourced project that is designed to give game developers and marketing developers the tools needed to create and manage lists of players waiting to gain access to a specific game using web 3.0 technologies. Developers can pick and choose how much of the project they wish to implement. From the most basic installation that just uses smart contracts to an advanced installation that includes all the bells and whistles. The project uses a decentralized architecture to create and store lists.     
+This project includes several examples of open sourced, stand-alone apps that are designed to give game developers and marketing developers the tools needed to create and manage lists of players waiting to gain access to a specific game using web 3.0 technologies. Developers can pick and choose how much of the project they wish to implement. From the most basic installation that just uses a plugin to an advanced installation that includes all the bells and whistles. The project uses a decentralized and distributed architectures to create and store lists.     
 ### 2.2 Product Functionality
-Summary of the primary functions performed by this product.
+Summary of the functionality that is being proposed for this project. Yes.. it's aspirational.
+* Web App with Web3 Authentication and Off-Chain list storage.
+* Web App with Web3 Authentication and On-Chain list storage.
+* Dapp with Web3 Authentication and On-Chain list storage.
+* Functioning Rest API with Web3 Authentication that handles Wapps and 3rd Party integrations. 
 * Smart Contracts. Choose from several smart contracts you wish to use.
+* Wallets. Choose which wallet you wish to integrate with.
 * Blockchain. Choose which blockchain you wish to deploy your contract on.
 * List Builder Dapp. Can be deployed as is or customized. We provide code samples that allow you to integrate the list builder into your existing app.
-* List Manager Dapp. Can be deployed as is or customized. We provide code samples that allow you to integrate the list manager into your existing app.
+* List Manager Wapp. Can be deployed as is or customized. We provide code samples that allow you to integrate the list manager into your existing app.
 * List Builder & Manager API. Launch the List Builder & the List Manager as an API that you can use with existing projects. 
 * Player incentive system. Add incentives for players to join your lists. Including NFT giveaway or pre-sale.
 * Player Rewards systems. Add rewards to players who stay on your lists such as discord badges, early access to other projects, etc
@@ -97,14 +103,16 @@ There are 3 primary user classes the product is designed for.
 * Game Developers who want a list of reliable, motivated players that will play their game when it's first released and are open to playing future games as they are released. 
 * Marketing Professionals working in the gaming space who desire to build communities of motivated players on behalf of the game developers.  
 ### 2.4 Operating Environment
-The product, in its most minimalistic form, is designed operate from a Blockchain capable of managing smart contracts in an inexpensive manner. We recommend the following Blockchains (example contracts are provided):
+The Wapps, in their most minimalistic form, are designed to work with serverless architectures and use REST api, GraphQL api, RPC api, Websocket api or Blockchain for the Backend. 
+
+The Dapp, in its most minimalistic form, is designed to operate on-chain with an assortment of blockchains such as:
 * Solana
 * Avalanche
 * Polygon
 * Fantom
 * Ethereum 
 
-The advanced features of the product are designed to **support** the main Blockchain features. The optional Backend and Frontend UI elements are designed to interact with the smart contract / blockchain functionality. The BE / FE UI elements can be hosted in any cloud environment or run as Dapps. The optional incentive systems, reward systems and 3rd party integrations will require cloud hosting.    
+The advanced features of the product are designed to **support** the main features. The optional Backend and Frontend UI elements are designed to interact with the smart contract / blockchain functionality. The BE / FE UI elements can be hosted in any cloud environment or run as Dapps. The optional incentive systems, reward systems and 3rd party integrations will require cloud hosting.    
 ### 2.5 Design and Implementation Constraints
 Some incentives or rewards may not be profound enough to drive adoption. Use the incentives or rewards examples provided as guides. The blockchain and smart contract examples provided may not meet your needs, use the ones provided as guides. UI (Dapp) code examples are optional and are not required. Cloud or local hosting is required for incentive systems.    
 ### 2.6 User Documentation
@@ -114,11 +122,13 @@ TODO
 Assumptions
 * TODO
 
-Dependencies
-* Blockchain provider
-* Wallet
-* Docker (if running locally)
-* Cloud Provider (advanced features)
+Possible Dependencies (check each example for list)
+* Blockchain provider (Ethereum is used in most examples)
+* Wallet (Metamask is used in most examples)
+* Docker
+* Cloudflare Wrangler
+* Cloudflare Pages
+* Cloudflare Workers
 ## External Interface Requirements
 ### 3.1 User Interfaces
 TODO

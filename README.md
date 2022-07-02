@@ -36,7 +36,12 @@ An easily deployed system for creating and managing game waitlists or NFT pre-sa
 
 ### Attribution
 
-The project may use code fragments and examples found in other projects. Appropriate attribution will be provided anywhere these code fragments are used.   
+The project may use code fragments and examples found in other projects. Appropriate attribution will be provided anywhere these code fragments are used.
+
+The following organizations and people have contributed to this project:
+* [Game7](https://game7.io/)
+* DCentn
+* BlockSecNerd
 
 ### License
 
