@@ -26,7 +26,7 @@ export const Brand = styled(Link)`
 
 export const Background = styled.div`
   border-radius: 4px;
-  background: #ff2401;
+  background: ${(props) => props.theme.accent};
   width: 48px;
   height: 48px;
   display: flex;
@@ -51,7 +51,7 @@ export const Join = styled.a`
   height: 48px;
   width: 140px;
   font-family: "Inter", sans-serif;
-  background: #ff2401;
+  background: ${(props) => props.theme.accent};
   color: white;
   font-size: 16px;
   display: flex;

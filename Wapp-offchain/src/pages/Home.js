@@ -10,12 +10,6 @@ const Home = () => {
     <>
       <Navigation />
       <Hero />
-      <GridView>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </GridView>
       <Footer />
     </>
   );

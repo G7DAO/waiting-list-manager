@@ -8,7 +8,6 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 80px;
 
   ${media.sm`
     height: 280px;
@@ -29,7 +28,25 @@ export const Grid = styled.div`
   `};
 `;
 
-//
+export const Icon = styled.img`
+  height: 28px;
+  width: 28px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Row = styled.div`
+  display: flex;
+  grid-gap: 12px;
+`;
+
+export const Game7 = styled.img`
+  display: flex;
+
+  height: 12px;
+`;
+
 export const Section = styled.div`
   display: flex;
   flex-direction: row;
@@ -55,10 +72,15 @@ export const Copyright = styled.div`
   transition: 500ms;
   width: 100%;
   text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  grid-gap: 8px;
 
   ${media.sm`
     text-align: left;
     font-size: 14px;
+      justify-content: flex-start;
   `}
 `;
 
@@ -83,6 +105,9 @@ export const Link = styled.a`
   text-decoration: none;
   color: ${(props) => props.theme.secondary};
   transition: 500ms;
+  height: 32px;
+  align-items: center;
+  display: flex;
 
   &:hover {
     color: ${(props) => props.theme.accent};

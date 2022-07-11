@@ -1,16 +1,16 @@
 import styled from "styled-components";
 import media from "../../constants/media.js";
 import { Link } from "react-router-dom";
-import ink from "../../assets/patterns/ink.svg";
+import hero from "../../assets/patterns/hero.svg";
 
 export const Container = styled.div`
-  height: 75vh;
   width: 100vw;
+  height: 82vh ;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #FFDDB7;
-  background-image: url(${ink});
+  background: #fff;
+  background-image: url(${hero});
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -44,13 +44,12 @@ export const Content = styled.div`
 
 export const Title = styled.div`
   font-size: 120px;
-  color: white;
+  color: ${(props) => props.theme.primary};
   text-align: center;
   line-height: 1em;
   font-family: "Bebas Neue", sans-serif;
   z-index: 2000;
   text-align: left;
-  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 
   ${media.md`
     font-size: 100px;
@@ -64,13 +63,12 @@ export const Title = styled.div`
 
 export const Description = styled.div`
   font-size: 20px;
-  color: #f9f9f9;
+  color: ${(props) => props.theme.secondary};
   max-width: 900px;
   line-height: 1.5em;
   font-family: "Inter", sans-serif;
   text-align: center;
   z-index: 2000;
-  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 
   ${media.md`
     text-align: center;
@@ -96,29 +94,6 @@ export const Section = styled.div`
   `}
 `;
 
-export const Fill = styled.a`
-  height: 60px;
-  width: 200px;
-  display: flex;
-  font-family: "Inter", sans-serif;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  color: #ff2401;
-  background: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: 750ms;
-
-  ${media.md`
-      width: 150px;
-  `}
-  &:hover {
-    transition: 750ms;
-    background: #f9f9f9;
-  }
-`;
-
 export const Route = styled.a`
   font-size: 16px;
   color: #ff2401;
@@ -136,26 +111,50 @@ export const Route = styled.a`
   }
 `;
 
-export const Outline = styled(Link)`
+export const Fill = styled.div`
   height: 60px;
-  width: 200px;
+  width: 220px;
+  display: flex;
+  font-family: "Inter", sans-serif;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  background: ${(props) => props.theme.accent};
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 750ms;
+
+  ${media.md`
+      width: 200px;
+  `}
+
+  &:hover {
+    transition: 750ms;
+    cursor: pointer;
+  }
+`;
+
+export const Outline = styled.div`
+  height: 60px;
+  width: 220px;
   font-family: "Inter", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  color: #fff;
-  border: 1px solid #fff;
+  color: ${(props) => props.theme.accent};
+  border: 1px solid ${(props) => props.theme.accent};
   border-radius: 8px;
   text-decoration: none;
   transition: 750ms;
-  ${media.md`
-      width: 150px;
+
+  ${media.sm`
+      display: none;
   `}
+
   &:hover {
-    background: #fff;
     transition: 750ms;
-    color: #ff2401;
-    border: 1px solid #ff2401;
+    cursor: pointer;
   }
 `;
